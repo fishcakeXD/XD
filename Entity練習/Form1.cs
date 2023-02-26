@@ -19,7 +19,8 @@ namespace Entity練習
 
         private void button3_Click(object sender, EventArgs e)
         {
-           
+            var form = new DeleteForm();
+            form.ShowDialog();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -30,8 +31,20 @@ namespace Entity練習
 
         private void button5_Click(object sender, EventArgs e)
         {
-            var form = new ViewForm();
+            var form = new ViewFrom();
             form.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var form = new ReviseForm();
+            form.ShowDialog();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            var form = new SerchForm();
+            form.ShowDialog();
         }
     }
 }
