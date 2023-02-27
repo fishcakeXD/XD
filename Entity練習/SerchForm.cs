@@ -23,10 +23,10 @@ namespace Entity練習
             var contect = new ContactsModel();
             var dataId = textBox1.Text;
             var list  = contect.ContactsTable.ToList();
-            if (list.Select((x) => x.Id).Any((x) => x == textBox1.Text))
+            if (list.Any((x) => x.Id == dataId))
             {
                 var list_data = contect.ContactsTable.Where(x => x.Id == dataId).ToList();
-                dataGridView1.DataSource = list;
+                dataGridView1.DataSource = list_data;
             }
             else
             {
